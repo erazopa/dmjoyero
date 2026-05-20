@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colección Exclusiva | Diego Molina Joyero</title>
+    <meta name="description"
+        content="Explora nuestra colección exclusiva de alta joyería, diseños en 3D y piezas restauradas por Diego Molina Joyero.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Page Transition Overlay -->
+    <div class="page-transition"></div>
+
+    <!-- Navbar -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-wrapper transition-link">
+                <img src="images/logodm.png" alt="Logo Diego Molina" class="brand-logo">
+                <div class="logo-text">
+                    <span class="logo-name">DIEGO MOLINA</span>
+                    <span class="logo-title">JOYERO</span>
+                </div>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html#inicio" class="transition-link">Inicio</a></li>
+                    <li><a href="index.html#servicios" class="transition-link">Servicios</a></li>
+                    <li><a href="#galeria" class="transition-link"
+                            style="color: var(--color-accent-gold);">Galería</a></li>
+                    <li><a href="#testimonios" class="transition-link">Testimonios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section id="galeria" class="page-header relative">
+        <div class="container">
+            <h1 class="page-title fade-in-up">Nuestra Colección</h1>
+            <div class="gold-separator fade-in-up" style="animation-delay: 0.2s;"></div>
+            <p class="page-subtitle fade-in-up" style="animation-delay: 0.4s;">Obras maestras atemporales, creadas con
+                pasión y precisión.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-wrapper section-padding">
+        <div class="container">
+
+            <!-- Filters -->
+            <div class="gallery-filters" id="dynamic-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+            </div>
+
+            <!-- Masonry Grid -->
+            <div class="masonry-grid" id="masonry-grid">            
+        </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Testimonios</h2>
+                <div class="gold-separator"></div>
+            </div>
+
+            <div id="testimonials-grid" class="testimonials-grid">
+                <!-- Testimonios se cargarán dinámicamente aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo footer-logo transition-link">
+                    <span class="logo-name">DIEGO MOLINA</span>
+                    <span class="logo-title">JOYERO</span>
+                </a>
+                <p class="footer-desc">Artesanía, lujo y exclusividad en cada detalle.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4 class="footer-heading">Enlaces</h4>
+                <ul>
+                    <li><a href="index.html#inicio" class="transition-link">Inicio</a></li>
+                    <li><a href="index.html#servicios" class="transition-link">Servicios</a></li>
+                    <li><a href="coleccion.html" class="transition-link">Colección de Joyas</a></li>
+                    <li><a href="#testimonios" class="transition-link">Testimonios</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4 class="footer-heading">Legado</h4>
+                <p><i class="fa-solid fa-award" style="color: var(--color-accent-gold); margin-right: 8px;"></i> Más de
+                    10 Años de Experiencia</p>
+                <p><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> Taller Exclusivo (Previa Cita)</p>
+                <div class="social-links" style="margin-top: 15px;">
+                    <a href="https://instagram.com/diegomolinajoyero" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i> @diegomolinajoyero</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="footer-copyright">&copy; 2026 Diego Molina Joyero. Todos los derechos reservados.</p>
+                <p class="footer-quote"><em>"Yo soy Jehová; este es mi nombre; y a otro no
+                        daré mi gloria, ni mi alabanza a esculturas."</em> <span class="footer-quote-author">YESHAYAHU
+                        42:8</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp CTA -->
+    <a href="https://wa.me/3135308520?text=Hola,%20quisiera%20solicitar%20asesoría%20sobre%20la%20colección."
+        target="_blank" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Solicitar Asesoría</span>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/coleccion.js"></script>
+</body>
+
+</html>
